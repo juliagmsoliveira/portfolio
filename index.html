@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Gomes | Jornalista & Redatora Sênior</title>
     <meta name="description" content="Portfólio de Julia Gomes, Especialista em redação para web e SEO.">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <script>
         tailwind.config = {
             theme: {
@@ -80,7 +77,7 @@
             background-color: #FDFBF7;
             color: #4A3B32;
         }
-
+        
         .glass-nav {
             background: rgba(253, 251, 247, 0.88);
             backdrop-filter: blur(12px);
@@ -91,16 +88,13 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
-
         ::-webkit-scrollbar-track {
             background: #FDFBF7;
         }
-
         ::-webkit-scrollbar-thumb {
             background: #D4B89B;
             border-radius: 4px;
         }
-
         ::-webkit-scrollbar-thumb:hover {
             background: #B89778;
         }
@@ -111,27 +105,20 @@
         }
     </style>
 </head>
-
 <body class="font-sans antialiased overflow-x-hidden selection:bg-caramel-light selection:text-coffee-dark">
 
     <header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#"
-                class="font-serif text-2xl font-medium text-coffee-dark tracking-wide hover:text-caramel transition-colors">
+            <a href="#" class="font-serif text-2xl font-medium text-coffee-dark tracking-wide hover:text-caramel transition-colors">
                 Julia Gomes<span class="text-terracotta">.</span>
             </a>
 
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#sobre"
-                    class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Sobre</a>
-                <a href="#competencias"
-                    class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Competências</a>
-                <a href="#experiencia"
-                    class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Experiência</a>
-                <a href="#portfolio"
-                    class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Cases</a>
-                <a href="#contato"
-                    class="px-5 py-2 rounded-full bg-caramel/20 text-coffee-dark text-sm font-medium hover:bg-caramel hover:text-white transition-all duration-300">
+                <a href="#sobre" class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Sobre</a>
+                <a href="#competencias" class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Competências</a>
+                <a href="#experiencia" class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Experiência</a>
+                <a href="#portfolio" class="text-sm font-medium text-coffee hover:text-caramel transition-colors uppercase tracking-wider">Cases</a>
+                <a href="#contato" class="px-5 py-2 rounded-full bg-caramel/20 text-coffee-dark text-sm font-medium hover:bg-caramel hover:text-white transition-all duration-300">
                     Fale Comigo
                 </a>
             </nav>
@@ -141,67 +128,47 @@
             </button>
         </div>
 
-        <div id="mobile-menu"
-            class="hidden md:hidden absolute top-20 left-0 w-full bg-cream-dark/98 backdrop-blur-lg border-b border-caramel/20 shadow-md flex flex-col items-center py-6 gap-6 transition-all">
-            <a href="#sobre" class="text-coffee-dark font-medium hover:text-terracotta"
-                onclick="toggleMobileMenu()">Sobre</a>
-            <a href="#competencias" class="text-coffee-dark font-medium hover:text-terracotta"
-                onclick="toggleMobileMenu()">Competências</a>
-            <a href="#experiencia" class="text-coffee-dark font-medium hover:text-terracotta"
-                onclick="toggleMobileMenu()">Experiência</a>
-            <a href="#portfolio" class="text-coffee-dark font-medium hover:text-terracotta"
-                onclick="toggleMobileMenu()">Cases</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-cream-dark/98 backdrop-blur-lg border-b border-caramel/20 shadow-md flex flex-col items-center py-6 gap-6 transition-all">
+            <a href="#sobre" class="text-coffee-dark font-medium hover:text-terracotta" onclick="toggleMobileMenu()">Sobre</a>
+            <a href="#competencias" class="text-coffee-dark font-medium hover:text-terracotta" onclick="toggleMobileMenu()">Competências</a>
+            <a href="#experiencia" class="text-coffee-dark font-medium hover:text-terracotta" onclick="toggleMobileMenu()">Experiência</a>
+            <a href="#portfolio" class="text-coffee-dark font-medium hover:text-terracotta" onclick="toggleMobileMenu()">Cases</a>
             <a href="#contato" class="text-terracotta font-medium" onclick="toggleMobileMenu()">Fale Comigo</a>
         </div>
     </header>
 
     <main>
         <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-            <div
-                class="absolute top-1/4 -right-10 w-72 h-72 bg-caramel-light/30 rounded-full mix-blend-multiply filter blur-2xl opacity-75 animate-blob">
-            </div>
-            <div
-                class="absolute top-1/3 right-40 w-72 h-72 bg-terracotta/20 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob animation-delay-2000">
-            </div>
-            <div
-                class="absolute -bottom-8 left-20 w-72 h-72 bg-cream-warm rounded-full mix-blend-multiply filter blur-2xl opacity-80 animate-blob animation-delay-4000">
-            </div>
+            <div class="absolute top-1/4 -right-10 w-72 h-72 bg-caramel-light/30 rounded-full mix-blend-multiply filter blur-2xl opacity-75 animate-blob"></div>
+            <div class="absolute top-1/3 right-40 w-72 h-72 bg-terracotta/20 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-cream-warm rounded-full mix-blend-multiply filter blur-2xl opacity-80 animate-blob animation-delay-4000"></div>
 
             <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
                 <div class="animate-fade-in-up">
-                    <div
-                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-caramel/30 text-caramel-dark text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-caramel/30 text-caramel-dark text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
                         <i class="ph-fill ph-sparkle"></i> Portfólio Profissional
                     </div>
                     <h1 class="text-5xl md:text-6xl font-serif text-coffee-dark leading-tight mb-6">
                         Julia Gomes <br>
-                        <span class="text-3xl md:text-4xl text-coffee font-light italic">— Jornalista & Redatora
-                            Sênior</span>
+                        <span class="text-3xl md:text-4xl text-coffee font-light italic">— Jornalista & Redatora Sênior</span>
                     </h1>
                     <p class="text-lg md:text-xl text-coffee mb-10 leading-relaxed font-light">
-                        Especialista em redação para web e SEO, transformando palavras em estratégias digitais de alta
-                        performance e posicionamento de marca.
+                        Especialista em redação para web e SEO, transformando palavras em estratégias digitais de alta performance e posicionamento de marca.
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
-                        <a href="#contato"
-                            class="px-8 py-4 rounded-full bg-coffee-dark text-cream font-medium hover:bg-caramel hover:text-white transition-all duration-300 shadow-md flex items-center gap-2">
+                        <a href="#contato" class="px-8 py-4 rounded-full bg-coffee-dark text-cream font-medium hover:bg-caramel hover:text-white transition-all duration-300 shadow-md flex items-center gap-2">
                             Fale Comigo <i class="ph ph-arrow-right"></i>
                         </a>
-                        <a href="#experiencia"
-                            class="px-8 py-4 rounded-full bg-white text-coffee-dark font-medium border border-caramel/30 hover:bg-cream-warm transition-all duration-300">
+                        <a href="#experiencia" class="px-8 py-4 rounded-full bg-white text-coffee-dark font-medium border border-caramel/30 hover:bg-cream-warm transition-all duration-300">
                             Ver Experiência
                         </a>
                     </div>
                 </div>
 
                 <div class="hidden md:flex justify-center items-center relative">
-                    <div
-                        class="relative w-80 h-[32rem] rounded-t-full rounded-b-[4rem] bg-gradient-to-tr from-caramel/40 to-terracotta/30 shadow-2xl p-2 overflow-hidden border border-white">
-                        <div
-                            class="w-full h-full rounded-t-full rounded-b-[3.5rem] bg-cream-dark flex items-center justify-center relative overflow-hidden">
-                            <img src="./img/perfil_julia.png" alt="Julia Gomes"
-                                class="w-full h-full object-cover object-center filter contrast-105"
-                                onerror="this.src='https://placehold.co/400x600/EBE3DC/4A3B32?text=Julia+Gomes'">
+                    <div class="relative w-80 h-[32rem] rounded-t-full rounded-b-[4rem] bg-gradient-to-tr from-caramel/40 to-terracotta/30 shadow-2xl p-2 overflow-hidden border border-white">
+                        <div class="w-full h-full rounded-t-full rounded-b-[3.5rem] bg-cream-dark flex items-center justify-center relative overflow-hidden">
+                            <img src="./img/perfil_julia.png" alt="Julia Gomes" class="w-full h-full object-cover object-center filter contrast-105" onerror="this.src='https://placehold.co/400x600/EBE3DC/4A3B32?text=Julia+Gomes'">
                         </div>
                     </div>
                 </div>
@@ -211,17 +178,12 @@
         <section id="sobre" class="section-padding bg-white relative">
             <div class="max-w-4xl mx-auto px-6 text-center">
                 <h2 class="text-sm font-semibold tracking-widest uppercase text-caramel-dark mb-3">Sobre Mim</h2>
-                <h3 class="text-3xl md:text-4xl font-serif text-coffee-dark mb-8">Paixão por palavras e estratégias
-                    digitais.</h3>
-
+                <h3 class="text-3xl md:text-4xl font-serif text-coffee-dark mb-8">Paixão por palavras e estratégias digitais.</h3>
+                
                 <div class="w-20 h-px bg-caramel mx-auto mb-8"></div>
-
+                
                 <p class="text-lg text-coffee leading-relaxed font-light mb-12">
-                    Jornalista de formação, pós-graduada em Influência Digital e apaixonada por comunicação estratégica.
-                    Transformo ideias, histórias e objetivos de negócio em conteúdos que conectam pessoas, fortalecem
-                    marcas e geram resultados. Minha atuação reúne SEO, marketing de conteúdo,
-                    comunicação corporativa e posicionamento digital. Porque comunicar não é apenas dizer algo. É fazer
-                    com que a mensagem permaneça.
+                    Jornalista de formação, pós-graduada em Influência Digital e apaixonada por comunicação estratégica. Transformo ideias, histórias e objetivos de negócio em conteúdos que conectam pessoas, fortalecem marcas e geram resultados. Minha atuação reúne SEO, marketing de conteúdo, comunicação corporativa e posicionamento digital. Porque comunicar não é apenas dizer algo. É fazer com que a mensagem permaneça.
                 </p>
             </div>
 
@@ -230,35 +192,21 @@
                     <h3 class="text-2xl md:text-3xl font-serif text-coffee-dark">Meus Serviços</h3>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div
-                        class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
+                    <div class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
                         <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">Marketing de Conteúdo</h4>
-                        <p class="text-sm text-coffee font-light leading-relaxed">Planejamento e produção de conteúdos
-                            alinhados aos objetivos da marca, considerando jornada do cliente, posicionamento e geração
-                            de valor para diferentes públicos.</p>
+                        <p class="text-sm text-coffee font-light leading-relaxed">Planejamento e produção de conteúdos alinhados aos objetivos da marca, considerando jornada do cliente, posicionamento e geração de valor para diferentes públicos.</p>
                     </div>
-                    <div
-                        class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
-                        <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">SEO (Search Engine
-                            Optimization)</h4>
-                        <p class="text-sm text-coffee font-light leading-relaxed">Criação de conteúdos otimizados para
-                            mecanismos de busca, com foco em visibilidade orgânica, experiência do usuário e performance
-                            digital.</p>
+                    <div class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
+                        <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">SEO (Search Engine Optimization)</h4>
+                        <p class="text-sm text-coffee font-light leading-relaxed">Criação de conteúdos otimizados para mecanismos de busca, com foco em visibilidade orgânica, experiência do usuário e performance digital.</p>
                     </div>
-                    <div
-                        class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
+                    <div class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
                         <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">Comunicação Corporativa</h4>
-                        <p class="text-sm text-coffee font-light leading-relaxed">Desenvolvimento de conteúdos
-                            institucionais, comunicados, campanhas internas e materiais que fortalecem a cultura
-                            organizacional e a comunicação entre empresas e pessoas.</p>
+                        <p class="text-sm text-coffee font-light leading-relaxed">Desenvolvimento de conteúdos institucionais, comunicados, campanhas internas e materiais que fortalecem a cultura organizacional e a comunicação entre empresas e pessoas.</p>
                     </div>
-                    <div
-                        class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
-                        <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">Conteúdo para Redes Sociais
-                        </h4>
-                        <p class="text-sm text-coffee font-light leading-relaxed">Planejamento e criação de conteúdos
-                            para LinkedIn, Instagram e outras plataformas, com foco em posicionamento, autoridade e
-                            engajamento.</p>
+                    <div class="p-8 rounded-3xl bg-cream border border-caramel/20 shadow-sm hover:border-caramel/50 transition-all">
+                        <h4 class="font-serif text-xl text-coffee-dark font-medium mb-3">Conteúdo para Redes Sociais</h4>
+                        <p class="text-sm text-coffee font-light leading-relaxed">Planejamento e criação de conteúdos para LinkedIn, Instagram e outras plataformas, com foco em posicionamento, autoridade e engajamento.</p>
                     </div>
                 </div>
             </div>
@@ -268,83 +216,54 @@
         <section id="clientes" class="py-10 bg-cream-warm border-y border-caramel/25">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="mb-6">
-                    <p class="text-center text-sm font-semibold tracking-widest uppercase text-caramel-dark">Marcas que
-                        confiam no meu trabalho</p>
+                    <p class="text-center text-sm font-semibold tracking-widest uppercase text-caramel-dark">Marcas que confiam no meu trabalho</p>
                 </div>
-
+                
                 <div class="relative w-full max-w-4xl mx-auto overflow-hidden flex py-2">
-                    <div
-                        class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-cream-warm to-transparent z-10 pointer-events-none">
-                    </div>
-                    <div
-                        class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-cream-warm to-transparent z-10 pointer-events-none">
-                    </div>
-
+                    <div class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-cream-warm to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-cream-warm to-transparent z-10 pointer-events-none"></div>
+                    
                     <div class="flex animate-marquee whitespace-nowrap items-center gap-4 sm:gap-12 min-w-full">
                         <!-- Bloco 1 -->
                         <div class="flex items-center gap-4 sm:gap-12 shrink-0">
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/inoar.png" alt="Inoar"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=INOAR'">
+                                <img src="./img/inoar.png" alt="Inoar" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=INOAR'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/tarjab.png" alt="Tarjab"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=Tarjab'">
+                                <img src="./img/tarjab.png" alt="Tarjab" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=Tarjab'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/advantech.png" alt="Advantech"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=ADVANTECH'">
+                                <img src="./img/advantech.png" alt="Advantech" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=ADVANTECH'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/cf5.png" alt="Control F5"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=CF5'">
+                                <img src="./img/cf5.png" alt="Control F5" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=CF5'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/borkar.png" alt="Borkar"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=BORKAR'">
+                                <img src="./img/borkar.png" alt="Borkar" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=BORKAR'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/unisa.png" alt="Unisa"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=UNISA'">
+                                <img src="./img/unisa.png" alt="Unisa" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=UNISA'">
                             </div>
                         </div>
                         <!-- Bloco 2 (Duplicado para looping perfeito) -->
                         <div class="flex items-center gap-4 sm:gap-12 shrink-0" aria-hidden="true">
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/inoar.png" alt="Inoar"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=INOAR'">
+                                <img src="./img/inoar.png" alt="Inoar" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=INOAR'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/tarjab.png" alt="Tarjab"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=Tarjab'">
+                                <img src="./img/tarjab.png" alt="Tarjab" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=Tarjab'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/advantech.png" alt="Advantech"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=ADVANTECH'">
+                                <img src="./img/advantech.png" alt="Advantech" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=ADVANTECH'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/cf5.png" alt="Control F5"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=CF5'">
+                                <img src="./img/cf5.png" alt="Control F5" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=CF5'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/borkar.png" alt="Borkar"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=BORKAR'">
+                                <img src="./img/borkar.png" alt="Borkar" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=BORKAR'">
                             </div>
                             <div class="flex items-center justify-center px-1">
-                                <img src="./img/unisa.png" alt="Unisa"
-                                    class="h-12 sm:h-20 w-auto object-contain transition-transform"
-                                    onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=UNISA'">
+                                <img src="./img/unisa.png" alt="Unisa" class="h-12 sm:h-20 w-auto object-contain transition-transform" onerror="this.src='https://placehold.co/180x80/transparent/4A3B32?text=UNISA'">
                             </div>
                         </div>
                     </div>
@@ -362,9 +281,8 @@
                 <div class="grid md:grid-cols-2 gap-10">
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-caramel/20">
                         <div class="flex items-center gap-3 mb-6">
-                            <div
-                                class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
-                                <i class="ph ph-brain text-xl"></i>
+                            <div class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
+                                <i class="ph ph-article text-xl"></i>
                             </div>
                             <h4 class="text-xl font-serif text-coffee-dark">Especializações</h4>
                         </div>
@@ -395,48 +313,36 @@
                     <div class="space-y-6">
                         <div class="bg-white p-8 rounded-3xl shadow-sm border border-caramel/20">
                             <div class="flex items-center gap-3 mb-6">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
-                                    <i class="ph ph-wrench text-xl"></i>
+                                <div class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
+                                    <i class="ph ph-laptop text-xl"></i>
                                 </div>
                                 <h4 class="text-xl font-serif text-coffee-dark">Ferramentas</h4>
                             </div>
                             <div class="grid grid-cols-3 gap-4">
-                                <div
-                                    class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
-                                        <img src="./img/asana.png" alt="Asana" class="w-full h-full object-contain"
-                                            onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-kanban text-2xl text-[#F06A6A]';">
+                                <div class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    <div class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        <img src="./img/asana.png" alt="Asana" class="w-full h-full object-contain" onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-kanban text-2xl text-[#F06A6A]';">
                                     </div>
                                     <span class="text-xs font-semibold text-coffee-dark tracking-wider">Asana</span>
                                 </div>
-                                <div
-                                    class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
-                                        <img src="./img/trello.png" alt="Trello" class="w-full h-full object-contain"
-                                            onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-squares-four text-2xl text-[#0079BF]';">
+                                <div class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    <div class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        <img src="./img/trello.png" alt="Trello" class="w-full h-full object-contain" onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-squares-four text-2xl text-[#0079BF]';">
                                     </div>
                                     <span class="text-xs font-semibold text-coffee-dark tracking-wider">Trello</span>
                                 </div>
-                                <div
-                                    class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
-                                        <img src="./img/rd.png" alt="RD Station" class="w-full h-full object-contain"
-                                            onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-rocket-launch text-2xl text-[#FF5C00]';">
+                                <div class="flex flex-col items-center justify-center p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    <div class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        <img src="./img/rd.png" alt="RD Station" class="w-full h-full object-contain" onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-rocket-launch text-2xl text-[#FF5C00]';">
                                     </div>
-                                    <span class="text-xs font-semibold text-coffee-dark tracking-wider">RD
-                                        Station</span>
+                                    <span class="text-xs font-semibold text-coffee-dark tracking-wider">RD Station</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="bg-white p-8 rounded-3xl shadow-sm border border-caramel/20">
                             <div class="flex items-center gap-3 mb-4">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
+                                <div class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center text-coffee-dark">
                                     <i class="ph ph-certificate text-xl"></i>
                                 </div>
                                 <h4 class="text-xl font-serif text-coffee-dark">Cursos Extracurriculares</h4>
@@ -461,96 +367,62 @@
 
                 <div class="relative border-l border-caramel/30 ml-4 md:ml-0 md:pl-8 space-y-12">
                     <div class="relative pl-8 md:pl-0">
-                        <div
-                            class="absolute -left-[39px] md:-left-10 bg-white border-4 border-terracotta w-5 h-5 rounded-full top-1.5">
-                        </div>
+                        <div class="absolute -left-[39px] md:-left-10 bg-white border-4 border-terracotta w-5 h-5 rounded-full top-1.5"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                             <h4 class="text-xl font-serif text-coffee-dark font-medium">Control F5</h4>
-                            <span
-                                class="inline-block px-3 py-1 bg-caramel/20 text-coffee-dark text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">Março
-                                2025 - Atual</span>
+                            <span class="inline-block px-3 py-1 bg-caramel/20 text-coffee-dark text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">Março 2025 - Atual</span>
                         </div>
                         <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora Sênior</p>
                         <p class="text-coffee font-light leading-relaxed">
-                            Responsável pelo desenvolvimento de conteúdos estratégicos voltados ao fortalecimento de
-                            marca, geração de autoridade e posicionamento digital. Atuo na criação de artigos para blogs
-                            com foco em SEO e performance orgânica, elaboração de roteiros, produção de press releases e
-                            desenvolvimento de materiais ricos para atração e geração de demanda.
+                            Responsável pelo desenvolvimento de conteúdos estratégicos voltados ao fortalecimento de marca, geração de autoridade e posicionamento digital. Atuo na criação de artigos para blogs com foco em SEO e performance orgânica, elaboração de roteiros, produção de press releases e desenvolvimento de materiais ricos para atração e geração de demanda.
                         </p>
                     </div>
 
                     <div class="relative pl-8 md:pl-0">
-                        <div
-                            class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5">
-                        </div>
+                        <div class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                             <h4 class="text-xl font-serif text-coffee-dark font-medium">M/CIA</h4>
-                            <span
-                                class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2023
-                                - 2024</span>
+                            <span class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2023 - 2024</span>
                         </div>
-                        <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora / Analista
-                            de Inbound Marketing</p>
+                        <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora / Analista de Inbound Marketing</p>
                         <p class="text-coffee font-light leading-relaxed">
-                            Construção de estratégias de conteúdo para Inbound Marketing, alinhadas à jornada do
-                            cliente. Produção de copies para Landing Pages e E-mail Marketing, revisão e otimização de
-                            conteúdos, planejamento editorial, pautas estratégicas e pesquisa de palavras-chave.
+                            Construção de estratégias de conteúdo para Inbound Marketing, alinhadas à jornada do cliente. Produção de copies para Landing Pages e E-mail Marketing, revisão e otimização de conteúdos, planejamento editorial, pautas estratégicas e pesquisa de palavras-chave.
                         </p>
                     </div>
 
                     <div class="relative pl-8 md:pl-0">
-                        <div
-                            class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5">
-                        </div>
+                        <div class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                             <h4 class="text-xl font-serif text-coffee-dark font-medium">Inoar Cosméticos</h4>
-                            <span
-                                class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2021
-                                - 2022</span>
+                            <span class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2021 - 2022</span>
                         </div>
-                        <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora
-                            Publicitária</p>
+                        <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora Publicitária</p>
                         <p class="text-coffee font-light leading-relaxed">
-                            Estratégia de comunicação e conteúdo de marca líder em cosméticos. Desenvolvimento de
-                            materiais para blogs, redes sociais, campanhas digitais e comunicação institucional.
-                            Produção de press releases e copies (LP e E-mail) para consolidação do posicionamento da
-                            marca.
+                            Estratégia de comunicação e conteúdo de marca líder em cosméticos. Desenvolvimento de materiais para blogs, redes sociais, campanhas digitais e comunicação institucional. Produção de press releases e copies (LP e E-mail) para consolidação do posicionamento da marca.
                         </p>
                     </div>
 
                     <div class="relative pl-8 md:pl-0">
-                        <div
-                            class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5">
-                        </div>
+                        <div class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                             <h4 class="text-xl font-serif text-coffee-dark font-medium">Agência Mediagruppe</h4>
-                            <span
-                                class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2019
-                                - 2021</span>
+                            <span class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2019 - 2021</span>
                         </div>
                         <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora</p>
                         <p class="text-coffee font-light leading-relaxed">
-                            Conteúdos estratégicos para projetos de Inbound Marketing visando atração, relacionamento e
-                            conversão de leads. Criação e revisão de materiais digitais, elaboração de copies
-                            persuasivas focadas na performance dos clientes.
+                            Conteúdos estratégicos para projetos de Inbound Marketing visando atração, relacionamento e conversão de leads. Criação e revisão de materiais digitais, elaboração de copies persuasivas focadas na performance dos clientes.
                         </p>
                     </div>
 
                     <div class="relative pl-8 md:pl-0">
-                        <div
-                            class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5">
-                        </div>
+                        <div class="absolute -left-[39px] md:-left-10 bg-white border-4 border-caramel w-5 h-5 rounded-full top-1.5"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                             <h4 class="text-xl font-serif text-coffee-dark font-medium">Grupo Ideal Trends</h4>
-                            <span
-                                class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2018
-                                - 2019</span>
+                            <span class="inline-block px-3 py-1 bg-cream-warm text-coffee text-xs font-semibold rounded-full mt-2 md:mt-0 w-fit">2018 - 2019</span>
                         </div>
                         <p class="text-sm text-terracotta font-medium tracking-wide uppercase mb-4">Redatora</p>
                         <p class="text-coffee font-light leading-relaxed">
-                            Produção de conteúdo institucional com foco em SEO, narrativas estratégicas para
-                            fortalecimento da autoridade e credibilidade. Conteúdos orientados por boas práticas de
-                            otimização e UX para ampliar visibilidade orgânica.
+                            Produção de conteúdo institucional com foco em SEO, narrativas estratégicas para fortalecimento da autoridade e credibilidade. Conteúdos orientados por boas práticas de otimização e UX para ampliar visibilidade orgânica.
                         </p>
                     </div>
                 </div>
@@ -565,32 +437,25 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-caramel hover:-translate-y-1 transition-transform duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-caramel hover:-translate-y-1 transition-transform duration-300">
                         <i class="ph-light ph-graduation-cap text-4xl text-caramel mx-auto mb-4"></i>
                         <h4 class="font-serif text-lg text-coffee-dark mb-2">Gestão em Recursos Humanos</h4>
                         <p class="text-sm text-coffee mb-1">Universidade de Santo Amaro - UNISA</p>
-                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Graduação | Previsão:
-                            Abr/2027</span>
+                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Graduação | Previsão: Abr/2027</span>
                     </div>
-
-                    <div
-                        class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-terracotta hover:-translate-y-1 transition-transform duration-300">
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-terracotta hover:-translate-y-1 transition-transform duration-300">
                         <i class="ph-light ph-student text-4xl text-terracotta mx-auto mb-4"></i>
-                        <h4 class="font-serif text-lg text-coffee-dark mb-2">Influência Digital: Conteúdo e Estratégia
-                        </h4>
+                        <h4 class="font-serif text-lg text-coffee-dark mb-2">Influência Digital: Conteúdo e Estratégia</h4>
                         <p class="text-sm text-coffee mb-1">Pontifícia Universidade Católica - PUC</p>
-                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Pós-Graduação |
-                            Concluído: Abr/2020</span>
+                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Pós-Graduação | Concluído: Abr/2020</span>
                     </div>
 
-                    <div
-                        class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-coffee-light hover:-translate-y-1 transition-transform duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-4 border-coffee-light hover:-translate-y-1 transition-transform duration-300">
                         <i class="ph-light ph-books text-4xl text-coffee-light mx-auto mb-4"></i>
                         <h4 class="font-serif text-lg text-coffee-dark mb-2">Comunicação Social - Jornalismo</h4>
                         <p class="text-sm text-coffee mb-1">Universidade de Santo Amaro - UNISA</p>
-                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Graduação |
-                            Concluído: Nov/2016</span>
+                        <span class="text-xs text-terracotta font-medium uppercase tracking-wider">Graduação | Concluído: Nov/2016</span>
                     </div>
                 </div>
             </div>
@@ -599,13 +464,9 @@
         <section id="portfolio" class="section-padding bg-white relative">
             <div class="max-w-6xl mx-auto px-6 relative z-10">
                 <div class="text-center mb-16">
-                    <h2 class="text-sm font-semibold tracking-widest uppercase text-terracotta mb-3">Projetos
-                        Desenvolvidos</h2>
-                    <h3 class="text-3xl md:text-5xl font-serif text-coffee-dark">Transformando Estratégia <br>em
-                        Comunicação</h3>
-                    <p class="text-coffee mt-6 max-w-2xl mx-auto font-light text-lg">Cada projeto representa uma
-                        oportunidade de criar conexões, fortalecer marcas e gerar impacto. A seguir, alguns dos
-                        trabalhos que marcaram minha trajetória.</p>
+                    <h2 class="text-sm font-semibold tracking-widest uppercase text-terracotta mb-3">Projetos Desenvolvidos</h2>
+                    <h3 class="text-3xl md:text-5xl font-serif text-coffee-dark">Transformando Estratégia <br>em Comunicação</h3>
+                    <p class="text-coffee mt-6 max-w-2xl mx-auto font-light text-lg">Cada projeto representa uma oportunidade de criar conexões, fortalecer marcas e gerar impacto. A seguir, alguns dos trabalhos que marcaram minha trajetória.</p>
                 </div>
 
                 <!-- Case 1: Inoar (Mosaico proporcional exato ao solicitado, colado, sem bordas arredondadas) -->
@@ -615,74 +476,43 @@
                             <h4 class="text-4xl font-serif text-coffee-dark mb-4">Inoar</h4>
                             <div class="w-12 h-1 bg-caramel mb-6"></div>
                             <p class="text-coffee font-light leading-relaxed text-lg mb-6">
-                                Na Inoar, atuei diretamente com a criação de campanhas, desenvolvendo conteúdos para as
-                                redes sociais e blog da marca, que incluíam redação para roteiros, legendas e artigos.
+                                Na Inoar, atuei diretamente com a criação de campanhas, desenvolvendo conteúdos para as redes sociais e blog da marca, que incluíam redação para roteiros, legendas e artigos.
                             </p>
-                            <span
-                                class="inline-block px-4 py-2 bg-cream-warm text-coffee-dark text-xs font-semibold rounded-full border border-caramel/30 uppercase tracking-wider">Beleza
-                                & Cosméticos</span>
+                            <span class="inline-block px-4 py-2 bg-cream-warm text-coffee-dark text-xs font-semibold rounded-full border border-caramel/30 uppercase tracking-wider">Beleza & Cosméticos</span>
                         </div>
-
+                        
                         <!-- Mosaico perfeitamente dimensionado e proporcional ao modelo de referência -->
                         <div class="lg:w-7/12 w-full max-w-[480px] mx-auto flex flex-col p-0 m-0 overflow-hidden">
                             <div class="w-full p-0 m-0">
-                                <img src="./img/inoar1.png"
-                                    class="w-full object-cover aspect-[16/9] block rounded-none border-0 m-0 p-0"
-                                    alt="Campanha Inoar"
-                                    onerror="this.src='https://placehold.co/600x338/EBE3DC/4A3B32?text=Inoar+1'">
+                                <img src="./img/inoar1.png" class="w-full object-cover aspect-[16/9] block rounded-none border-0 m-0 p-0" alt="Campanha Inoar" onerror="this.src='https://placehold.co/600x338/EBE3DC/4A3B32?text=Inoar+1'">
                             </div>
                             <div class="grid grid-cols-2 w-full p-0 m-0 gap-0">
-                                <img src="./img/inoar2.png"
-                                    class="w-full object-cover aspect-[4/3] block rounded-none border-0 m-0 p-0"
-                                    alt="Produto Inoar"
-                                    onerror="this.src='https://placehold.co/300x225/EBE3DC/4A3B32?text=Inoar+2'">
-                                <img src="./img/inoar3.png"
-                                    class="w-full object-cover aspect-[4/3] block rounded-none border-0 m-0 p-0"
-                                    alt="Kit Inoar"
-                                    onerror="this.src='https://placehold.co/300x225/EBE3DC/4A3B32?text=Inoar+3'">
+                                <img src="./img/inoar2.png" class="w-full object-cover aspect-[4/3] block rounded-none border-0 m-0 p-0" alt="Produto Inoar" onerror="this.src='https://placehold.co/300x225/EBE3DC/4A3B32?text=Inoar+2'">
+                                <img src="./img/inoar3.png" class="w-full object-cover aspect-[4/3] block rounded-none border-0 m-0 p-0" alt="Kit Inoar" onerror="this.src='https://placehold.co/300x225/EBE3DC/4A3B32?text=Inoar+3'">
                             </div>
                         </div>
                     </div>
 
                     <!-- Instagram Reels Mockups -->
                     <div class="mt-12">
-                        <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i
-                                class="ph ph-instagram-logo mr-1"></i> Conteúdos em Vídeo (Reels)</p>
+                        <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i class="ph ph-instagram-logo mr-1"></i> Conteúdos em Vídeo (Reels)</p>
                         <div class="flex flex-wrap justify-center gap-6 lg:gap-8">
-                            <div
-                                class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                <div
-                                    class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                </div>
+                            <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                 <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                    <iframe data-src="https://www.instagram.com/p/DJAUODvpVPv/embed/?hidecaption=true"
-                                        width="100%" height="100%" frameborder="0" scrolling="no"
-                                        class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                        allow="autoplay; encrypted-media"></iframe>
+                                    <iframe data-src="https://www.instagram.com/p/DJAUODvpVPv/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                 </div>
                             </div>
-                            <div
-                                class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                <div
-                                    class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                </div>
+                            <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                 <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                    <iframe data-src="https://www.instagram.com/p/DG5wdgpOYMj/embed/?hidecaption=true"
-                                        width="100%" height="100%" frameborder="0" scrolling="no"
-                                        class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                        allow="autoplay; encrypted-media"></iframe>
+                                    <iframe data-src="https://www.instagram.com/p/DG5wdgpOYMj/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                 </div>
                             </div>
-                            <div
-                                class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                <div
-                                    class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                </div>
+                            <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                 <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                    <iframe data-src="https://www.instagram.com/p/DFJJPVuv-J0/embed/?hidecaption=true"
-                                        width="100%" height="100%" frameborder="0" scrolling="no"
-                                        class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                        allow="autoplay; encrypted-media"></iframe>
+                                    <iframe data-src="https://www.instagram.com/p/DFJJPVuv-J0/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -695,58 +525,36 @@
                 <div class="mb-24">
                     <div class="flex flex-col lg:flex-row gap-8 items-start mb-10">
                         <div class="lg:w-[300px] flex justify-center shrink-0 mx-auto">
-                            <div
-                                class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                <div
-                                    class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                </div>
+                            <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                 <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                    <iframe
-                                        data-src="https://www.instagram.com/reel/DceavfaABue/embed/?hidecaption=true"
-                                        width="100%" height="100%" frameborder="0" scrolling="no"
-                                        class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                        allow="autoplay; encrypted-media"></iframe>
+                                    <iframe data-src="https://www.instagram.com/reel/DceavfaABue/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="lg:flex-1 flex flex-col justify-start">
                             <div>
                                 <h4 class="text-4xl font-serif text-coffee-dark mb-3">Control F5</h4>
                                 <div class="w-12 h-1 bg-terracotta mb-4"></div>
                                 <p class="text-coffee font-light leading-relaxed text-base mb-4">
-                                    Na Control F5, ecossistema de soluções especializado no mercado bet, minha atuação é
-                                    diretamente com a produção de artigos para blog, press releases, roteiros para Reels
-                                    nas redes sociais da empresa e elaboração de pautas para todos esses conteúdos.
+                                    Na Control F5, ecossistema de soluções especializado no mercado bet, minha atuação é diretamente com a produção de artigos para blog, press releases, roteiros para Reels nas redes sociais da empresa e elaboração de pautas para todos esses conteúdos.
                                 </p>
-                                <span
-                                    class="inline-block px-4 py-1.5 bg-cream text-coffee-dark text-xs font-semibold rounded-full border border-caramel/35 uppercase tracking-wider mb-6">iGaming
-                                    & Betting</span>
+                                <span class="inline-block px-4 py-1.5 bg-cream text-coffee-dark text-xs font-semibold rounded-full border border-caramel/35 uppercase tracking-wider mb-6">iGaming & Betting</span>
                             </div>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-                                <a href="https://controlf5.com.br/growth-hacking-no-igaming/" target="_blank"
-                                    class="group block relative rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                                    <img src="./img/cf5_img1.png"
-                                        class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
-                                        alt="Artigo Control F5"
-                                        onerror="this.src='https://placehold.co/400x280/EBE3DC/4A3B32?text=Control+F5+1'">
+                                <a href="https://controlf5.com.br/growth-hacking-no-igaming/" target="_blank" class="group block relative rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                                    <img src="./img/cf5_img1.png" class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105" alt="Artigo Control F5" onerror="this.src='https://placehold.co/400x280/EBE3DC/4A3B32?text=Control+F5+1'">
                                     <div class="p-3 bg-white flex items-center justify-between">
-                                        <span class="text-xs font-medium text-coffee-dark">Growth Hacking no
-                                            iGaming</span>
+                                        <span class="text-xs font-medium text-coffee-dark">Growth Hacking no iGaming</span>
                                         <i class="ph ph-arrow-up-right text-terracotta text-lg"></i>
                                     </div>
                                 </a>
-                                <a href="https://controlf5.com.br/branding-posicionamento-igaming-diferenciacao-marca/"
-                                    target="_blank"
-                                    class="group block relative rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                                    <img src="./img/cf5_img2.png"
-                                        class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
-                                        alt="Artigo Control F5"
-                                        onerror="this.src='https://placehold.co/400x280/EBE3DC/4A3B32?text=Control+F5+2'">
+                                <a href="https://controlf5.com.br/branding-posicionamento-igaming-diferenciacao-marca/" target="_blank" class="group block relative rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                                    <img src="./img/cf5_img2.png" class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105" alt="Artigo Control F5" onerror="this.src='https://placehold.co/400x280/EBE3DC/4A3B32?text=Control+F5+2'">
                                     <div class="p-3 bg-white flex items-center justify-between">
-                                        <span class="text-xs font-medium text-coffee-dark">Branding e
-                                            Posicionamento</span>
+                                        <span class="text-xs font-medium text-coffee-dark">Branding e Posicionamento</span>
                                         <i class="ph ph-arrow-up-right text-terracotta text-lg"></i>
                                     </div>
                                 </a>
@@ -764,94 +572,55 @@
                             <h4 class="text-4xl font-serif text-coffee-dark mb-4">Borkar</h4>
                             <div class="w-12 h-1 bg-coffee-light mb-6"></div>
                             <p class="text-coffee font-light leading-relaxed text-lg mb-6">
-                                Maior empresa brasileira do ramo de tapetes automotivos, na Borkar realizei trabalhos
-                                com a produção de conteúdos para blog e redes sociais, além de roteiros de vídeos para
-                                Instagram e YouTube da marca.
+                                Maior empresa brasileira do ramo de tapetes automotivos, na Borkar realizei trabalhos com a produção de conteúdos para blog e redes sociais, além de roteiros de vídeos para Instagram e YouTube da marca.
                             </p>
-                            <span
-                                class="inline-block px-4 py-2 bg-cream-warm text-coffee-dark text-xs font-semibold rounded-full uppercase tracking-wider">Automotivo</span>
+                            <span class="inline-block px-4 py-2 bg-cream-warm text-coffee-dark text-xs font-semibold rounded-full uppercase tracking-wider">Automotivo</span>
                         </div>
                         <div class="lg:w-1/2">
-                            <img src="./img/borkar_img1.png"
-                                class="rounded-3xl shadow-md object-cover w-full border border-gray-100 max-h-80"
-                                alt="Post Borkar"
-                                onerror="this.src='https://placehold.co/600x350/EBE3DC/4A3B32?text=Borkar+Post'">
+                            <img src="./img/borkar_img1.png" class="rounded-3xl shadow-md object-cover w-full border border-gray-100 max-h-80" alt="Post Borkar" onerror="this.src='https://placehold.co/600x350/EBE3DC/4A3B32?text=Borkar+Post'">
                         </div>
                     </div>
 
                     <div class="mt-12 space-y-12">
                         <div>
-                            <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i
-                                    class="ph ph-instagram-logo mr-1"></i> Conteúdos Instagram</p>
+                            <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i class="ph ph-instagram-logo mr-1"></i> Conteúdos Instagram</p>
                             <div class="flex flex-wrap justify-center items-start gap-6 lg:gap-8">
-                                <div
-                                    class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                    <div
-                                        class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                    </div>
+                                <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                     <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                        <iframe
-                                            data-src="https://www.instagram.com/p/DYmmhTwOKjH/embed/?hidecaption=true"
-                                            width="100%" height="100%" frameborder="0" scrolling="no"
-                                            class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                            allow="autoplay; encrypted-media"></iframe>
+                                        <iframe data-src="https://www.instagram.com/p/DYmmhTwOKjH/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                     </div>
                                 </div>
-                                <div
-                                    class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden mt-0 lg:mt-12">
-                                    <div
-                                        class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                    </div>
+                                <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden mt-0 lg:mt-12">
+                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                     <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                        <iframe
-                                            data-src="https://www.instagram.com/p/DWXKs96iI4x/embed/?hidecaption=true"
-                                            width="100%" height="100%" frameborder="0" scrolling="no"
-                                            class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                            allow="autoplay; encrypted-media"></iframe>
+                                        <iframe data-src="https://www.instagram.com/p/DWXKs96iI4x/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                     </div>
                                 </div>
-                                <div
-                                    class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
-                                    <div
-                                        class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20">
-                                    </div>
+                                <div class="relative w-[280px] h-[540px] border-[8px] border-coffee-dark/80 rounded-[2.5rem] shadow-lg bg-white flex flex-col pt-7 overflow-hidden">
+                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-coffee-dark/80 rounded-b-lg z-20"></div>
                                     <div class="relative flex-1 bg-gray-50 overflow-hidden pt-4">
-                                        <iframe
-                                            data-src="https://www.instagram.com/p/DUYRs40Ddla/embed/?hidecaption=true"
-                                            width="100%" height="100%" frameborder="0" scrolling="no"
-                                            class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none"
-                                            allow="autoplay; encrypted-media"></iframe>
+                                        <iframe data-src="https://www.instagram.com/p/DUYRs40Ddla/embed/?hidecaption=true" width="100%" height="100%" frameborder="0" scrolling="no" class="lazy-video absolute top-0 left-0 w-full h-[115%] border-none" allow="autoplay; encrypted-media"></iframe>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i
-                                    class="ph ph-youtube-logo mr-1"></i> Produções para YouTube</p>
+                            <p class="text-center text-sm font-semibold tracking-widest uppercase text-coffee mb-6"><i class="ph ph-youtube-logo mr-1"></i> Produções para YouTube</p>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                                <a href="https://www.youtube.com/watch?v=kHjeVd0MtDE" target="_blank"
-                                    class="group relative rounded-3xl overflow-hidden shadow-xl border-[8px] border-coffee-dark/80 bg-gray-900 block aspect-video">
-                                    <img src="./img/borkar_YT1.png" alt="Produção YouTube 1"
-                                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                        onerror="this.src='https://placehold.co/600x338/2C221D/FDFBF7?text=YouTube+Video+1'">
-                                    <div
-                                        class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                        <div
-                                            class="w-16 h-16 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <a href="https://www.youtube.com/watch?v=kHjeVd0MtDE" target="_blank" class="group relative rounded-3xl overflow-hidden shadow-xl border-[8px] border-coffee-dark/80 bg-gray-900 block aspect-video">
+                                    <img src="./img/borkar_YT1.png" alt="Produção YouTube 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/600x338/2C221D/FDFBF7?text=YouTube+Video+1'">
+                                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                                        <div class="w-16 h-16 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                                             <i class="ph-fill ph-play text-2xl ml-1"></i>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://www.youtube.com/watch?v=9OHPfpmnZIk" target="_blank"
-                                    class="group relative rounded-3xl overflow-hidden shadow-xl border-[8px] border-coffee-dark/80 bg-gray-900 block aspect-video">
-                                    <img src="./img/borkar_YT2.png" alt="Produção YouTube 2"
-                                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                        onerror="this.src='https://placehold.co/600x338/2C221D/FDFBF7?text=YouTube+Video+2'">
-                                    <div
-                                        class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                        <div
-                                            class="w-16 h-16 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <a href="https://www.youtube.com/watch?v=9OHPfpmnZIk" target="_blank" class="group relative rounded-3xl overflow-hidden shadow-xl border-[8px] border-coffee-dark/80 bg-gray-900 block aspect-video">
+                                    <img src="./img/borkar_YT2.png" alt="Produção YouTube 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/600x338/2C221D/FDFBF7?text=YouTube+Video+2'">
+                                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                                        <div class="w-16 h-16 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                                             <i class="ph-fill ph-play text-2xl ml-1"></i>
                                         </div>
                                     </div>
@@ -869,52 +638,33 @@
                         <h4 class="text-4xl font-serif text-coffee-dark mb-4">Press Releases</h4>
                         <p class="text-coffee font-light text-lg">Comunicação corporativa para veículos de mídia.</p>
                     </div>
-
+                    
                     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        <a href="https://amig.bet/nova-portaria-desenrola-brasil/" target="_blank"
-                            class="group flex flex-col bg-cream rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-caramel/20">
+                        <a href="https://amig.bet/nova-portaria-desenrola-brasil/" target="_blank" class="group flex flex-col bg-cream rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-caramel/20">
                             <div class="h-44 overflow-hidden relative">
-                                <img src="./img/Press_img1.png"
-                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                    alt="Press Release 1"
-                                    onerror="this.src='https://placehold.co/500x280/EBE3DC/4A3B32?text=Press+Release+1'">
-                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
-                                </div>
+                                <img src="./img/Press_img1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Press Release 1" onerror="this.src='https://placehold.co/500x280/EBE3DC/4A3B32?text=Press+Release+1'">
+                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                             </div>
                             <div class="p-6 flex-grow flex flex-col justify-between">
                                 <div>
-                                    <p class="text-xs font-semibold text-terracotta uppercase tracking-wider mb-2">
-                                        Amig.bet</p>
-                                    <h5 class="font-serif text-xl text-coffee-dark mb-3">Jogo Responsável, Nova Portaria
-                                        (Desenrola) e Fiscalização</h5>
+                                    <p class="text-xs font-semibold text-terracotta uppercase tracking-wider mb-2">Amig.bet</p>
+                                    <h5 class="font-serif text-xl text-coffee-dark mb-3">Jogo Responsável, Nova Portaria (Desenrola) e Fiscalização</h5>
                                 </div>
-                                <span
-                                    class="text-sm font-medium text-caramel-dark group-hover:text-coffee-dark transition-colors flex items-center gap-1 mt-4">Ler
-                                    conteúdo na íntegra <i class="ph ph-arrow-right"></i></span>
+                                <span class="text-sm font-medium text-caramel-dark group-hover:text-coffee-dark transition-colors flex items-center gap-1 mt-4">Ler conteúdo na íntegra <i class="ph ph-arrow-right"></i></span>
                             </div>
                         </a>
-
-                        <a href="https://inoar.com/27/06/2022/inoar-afro-vegan-e-eleito-melhor-auxiliar-de-modelagem-de-cachos-na-africa-sul-pela-beauty-awards-woman-home/"
-                            target="_blank"
-                            class="group flex flex-col bg-cream rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-caramel/20">
+                        
+                        <a href="https://inoar.com/27/06/2022/inoar-afro-vegan-e-eleito-melhor-auxiliar-de-modelagem-de-cachos-na-africa-sul-pela-beauty-awards-woman-home/" target="_blank" class="group flex flex-col bg-cream rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-caramel/20">
                             <div class="h-44 overflow-hidden relative">
-                                <img src="./img/Press_img2.png"
-                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                    alt="Press Release 2"
-                                    onerror="this.src='https://placehold.co/500x280/EBE3DC/4A3B32?text=Press+Release+2'">
-                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
-                                </div>
+                                <img src="./img/Press_img2.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Press Release 2" onerror="this.src='https://placehold.co/500x280/EBE3DC/4A3B32?text=Press+Release+2'">
+                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                             </div>
                             <div class="p-6 flex-grow flex flex-col justify-between">
                                 <div>
-                                    <p class="text-xs font-semibold text-terracotta uppercase tracking-wider mb-2">Inoar
-                                        Cosméticos</p>
-                                    <h5 class="font-serif text-xl text-coffee-dark mb-3">Inoar Afro Vegan é eleito
-                                        melhor auxiliar de modelagem de cachos na África do Sul</h5>
+                                    <p class="text-xs font-semibold text-terracotta uppercase tracking-wider mb-2">Inoar Cosméticos</p>
+                                    <h5 class="font-serif text-xl text-coffee-dark mb-3">Inoar Afro Vegan é eleito melhor auxiliar de modelagem de cachos na África do Sul</h5>
                                 </div>
-                                <span
-                                    class="text-sm font-medium text-caramel-dark group-hover:text-coffee-dark transition-colors flex items-center gap-1 mt-4">Ler
-                                    conteúdo na íntegra <i class="ph ph-arrow-right"></i></span>
+                                <span class="text-sm font-medium text-caramel-dark group-hover:text-coffee-dark transition-colors flex items-center gap-1 mt-4">Ler conteúdo na íntegra <i class="ph ph-arrow-right"></i></span>
                             </div>
                         </a>
                     </div>
@@ -924,52 +674,42 @@
         </section>
 
         <!-- Seção de Contato com background escuro da imagem cafe.png escurecida -->
-        <section id="contato" class="section-padding relative overflow-hidden text-cream"
-            style="background-color: #1a120e; background-image: linear-gradient(rgba(15, 10, 8, 0.94), rgba(15, 10, 8, 0.96)), url('./img/cafe.png'); background-size: cover; background-position: center;">
+        <section id="contato" class="section-padding relative overflow-hidden text-cream" style="background-color: #1a120e; background-image: linear-gradient(rgba(15, 10, 8, 0.94), rgba(15, 10, 8, 0.96)), url('./img/cafe.png'); background-size: cover; background-position: center;">
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
                 <div class="mb-12">
                     <h2 class="text-3xl md:text-5xl font-serif text-cream leading-tight mb-6">
                         A comunicação transforma ideias em conexões e objetivos em resultados.
                     </h2>
                     <p class="text-lg text-cream/80 mb-6 font-light max-w-2xl mx-auto">
-                        Estes são alguns dos projetos que marcaram minha trajetória até aqui e muitos outros ainda estão
-                        por vir.
+                        Estes são alguns dos projetos que marcaram minha trajetória até aqui e muitos outros ainda estão por vir.
                     </p>
-
+                    
                     <div class="inline-flex items-center gap-3">
                         <div class="w-12 h-[1px] bg-caramel"></div>
-                        <h3 class="text-2xl font-serif text-terracotta-light font-medium italic">Vamos criar JUNTOS?
-                        </h3>
+                        <h3 class="text-2xl font-serif text-terracotta-light font-medium italic">Vamos criar JUNTOS?</h3>
                         <div class="w-12 h-[1px] bg-caramel"></div>
                     </div>
                 </div>
 
-                <div
-                    class="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-10 w-full max-w-4xl mx-auto">
-                    <a href="https://wa.me/5511961839918" target="_blank"
-                        class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
-                        <div
-                            class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-10 w-full max-w-4xl mx-auto">
+                    <a href="https://wa.me/5511961839918" target="_blank" class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
+                        <div class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
                             <i class="ph ph-whatsapp-logo text-2xl"></i>
                         </div>
                         <h4 class="font-serif text-lg text-cream mb-1">WhatsApp</h4>
                         <p class="text-sm text-cream/70">(11) 96183-9918</p>
                     </a>
 
-                    <a href="mailto:julia.gomes01@hotmail.com"
-                        class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
-                        <div
-                            class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
+                    <a href="mailto:julia.gomes01@hotmail.com" class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
+                        <div class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
                             <i class="ph ph-envelope-simple text-2xl"></i>
                         </div>
                         <h4 class="font-serif text-lg text-cream mb-1">E-mail</h4>
                         <p class="text-sm text-cream/70">julia.gomes01@hotmail.com</p>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/juliagms/" target="_blank"
-                        class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
-                        <div
-                            class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
+                    <a href="https://www.linkedin.com/in/juliagms/" target="_blank" class="group flex flex-col items-center justify-center p-8 bg-coffee/80 backdrop-blur-sm rounded-3xl shadow-lg border border-caramel/20 hover:border-caramel hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full md:w-1/3">
+                        <div class="w-14 h-14 rounded-full bg-coffee-dark group-hover:bg-caramel text-cream group-hover:text-white flex items-center justify-center mb-4 transition-colors shadow-inner">
                             <i class="ph ph-linkedin-logo text-2xl"></i>
                         </div>
                         <h4 class="font-serif text-lg text-cream mb-1">LinkedIn</h4>
@@ -986,8 +726,7 @@
                 "Palavras têm o poder de informar.<br>Histórias têm o poder de permanecer."
             </p>
             <div class="w-16 h-px bg-caramel mx-auto mb-6"></div>
-            <a href="#"
-                class="inline-block font-serif text-2xl font-medium text-cream tracking-wide mb-4 hover:text-caramel-light transition-colors">
+            <a href="#" class="inline-block font-serif text-2xl font-medium text-cream tracking-wide mb-4 hover:text-caramel-light transition-colors">
                 Julia Gomes<span class="text-terracotta">.</span>
             </a>
             <p class="text-sm text-cream/60 uppercase tracking-widest mb-6">Jornalista & Redatora Sênior</p>
@@ -1024,7 +763,7 @@
                     if (entry.isIntersecting) {
                         const iframe = entry.target;
                         let src = iframe.getAttribute('data-src');
-
+                        
                         if (src) {
                             iframe.src = src;
                             iframe.removeAttribute('data-src');
@@ -1032,9 +771,9 @@
                         }
                     }
                 });
-            }, {
+            }, { 
                 rootMargin: "0px 0px 200px 0px",
-                threshold: 0.05
+                threshold: 0.05 
             });
 
             document.querySelectorAll('iframe.lazy-video').forEach(iframe => {
@@ -1043,5 +782,4 @@
         });
     </script>
 </body>
-
 </html>
