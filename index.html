@@ -163,7 +163,7 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu"
-            class="hidden fixed inset-0 top-20 bg-cream/98 backdrop-blur-xl z-40 flex flex-col items-center justify-start pt-12 gap-8 transition-all border-b border-caramel/20 shadow-2xl">
+            class="hidden fixed inset-0 top-20 bg-cream z-40 flex flex-col items-center justify-start pt-12 gap-8 transition-all border-b border-caramel/20 shadow-2xl overflow-y-auto pb-10">
             <a href="#sobre" class="text-coffee-dark text-xl font-medium hover:text-terracotta transition-colors"
                 onclick="toggleMobileMenu()">Sobre</a>
             <a href="#competencias" class="text-coffee-dark text-xl font-medium hover:text-terracotta transition-colors"
@@ -452,34 +452,34 @@
                             </div>
                             <div class="grid grid-cols-3 gap-2 sm:gap-4">
                                 <div
-                                    class="flex flex-col items-center justify-center p-3 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    class="flex flex-col items-center justify-center p-2 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
                                         <img src="./img/asana.png" alt="Asana" class="w-full h-full object-contain"
                                             onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-kanban text-2xl text-[#F06A6A]';">
                                     </div>
                                     <span
-                                        class="text-[11px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">Asana</span>
+                                        class="text-[10px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">Asana</span>
                                 </div>
                                 <div
-                                    class="flex flex-col items-center justify-center p-3 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    class="flex flex-col items-center justify-center p-2 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
                                         <img src="./img/trello.png" alt="Trello" class="w-full h-full object-contain"
                                             onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-squares-four text-2xl text-[#0079BF]';">
                                     </div>
                                     <span
-                                        class="text-[11px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">Trello</span>
+                                        class="text-[10px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">Trello</span>
                                 </div>
                                 <div
-                                    class="flex flex-col items-center justify-center p-3 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
+                                    class="flex flex-col items-center justify-center p-2 sm:p-4 bg-cream-warm/50 rounded-2xl border border-caramel/20 hover:border-caramel transition-all group">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
+                                        class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-2 group-hover:scale-110 transition-transform p-1.5">
                                         <img src="./img/rd.png" alt="RD Station" class="w-full h-full object-contain"
                                             onerror="this.replaceWith(document.createElement('i')); this.className='ph-fill ph-rocket-launch text-2xl text-[#FF5C00]';">
                                     </div>
                                     <span
-                                        class="text-[11px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">RD
+                                        class="text-[10px] sm:text-xs font-semibold text-coffee-dark tracking-wider whitespace-nowrap">RD
                                         Station</span>
                                 </div>
                             </div>
@@ -1066,9 +1066,13 @@
             if (!menu.classList.contains('hidden')) {
                 menuIcon.className = 'ph ph-x text-3xl';
                 document.body.style.overflow = 'hidden';
+                navbar.classList.remove('glass-nav');
+                navbar.classList.add('bg-cream');
             } else {
                 menuIcon.className = 'ph ph-list text-3xl';
                 document.body.style.overflow = 'auto';
+                navbar.classList.add('glass-nav');
+                navbar.classList.remove('bg-cream');
             }
         }
 
